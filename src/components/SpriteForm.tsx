@@ -29,7 +29,7 @@ const SpriteForm = () => {
 
   return (
     <div>
-      <input type="number" min={0} name={'side'} onChange={(e) => setSide(e.value)} value={side}/>
+      <input type="number" min={0} onChange={(e) => setSide(e.target.value)} value={side}/>
       <button onClick={() => setSideHandler(side)}>Установить сторону/Очистить спрайт</button>
       <button onClick={copy}>Скопировать</button>
     </div>
